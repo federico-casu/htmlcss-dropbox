@@ -10,6 +10,12 @@ html {
     font-family: sans-serif;
 }
 
+/* img reset */
+img {
+    width: 100%;
+    display: block;
+}
+
 /* ------------------
  begin UTILITY CLASSES
 ------------------ */
@@ -23,15 +29,21 @@ html {
     cursor: pointer;
 }
 
+.standard-dim {
+    width: 60%;
+    margin: 0 auto;
+}
+
 /* ------------------
  end UTILITY CLASSES
 ------------------ */
 
 header .top-bar {
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 15px;
+    padding: 0 15px;
     position: fixed;
     top: 0;
     left: 0;
@@ -51,4 +63,43 @@ header .top-bar {
     text-decoration: none;
     color: #373737;
 }
+
+.cta-container {
+    margin-top: 10vh;
+    background-color: #b4d0e7;
+}
+
+#cta .cta-title {
+    font-size: 60px;
+    padding-block: 50px 30px;
+}
+
+#cta .cta-contents {
+    display: flex;
+}
+
+#cta .cta-contents .cta-contents-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 30%;
+}
+
+#cta .cta-contents .cta-contents-text .fa-arrow-down {
+    font-size: 50px;
+}
+
+
+
+#cta .cta-contents .cta-contents-img {
+    flex-basis: 70%;
+    position: relative;
+    top: 20px;
+    /* width: 120%; */
+    /* transform: scale(1.0); */
+}
+
+/* #cta .cta-contents .cta-contents-img img {
+    width: 130%;
+} */
 
