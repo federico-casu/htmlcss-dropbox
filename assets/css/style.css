@@ -27,6 +27,7 @@ img {
     color: white;
     background-color: #0161ff;
     cursor: pointer;
+    text-align: center;
 }
 
 .standard-dim {
@@ -40,6 +41,7 @@ img {
 
 header .top-bar {
     height: 10vh;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,8 +71,13 @@ header .top-bar {
     background-color: #b4d0e7;
 }
 
+#cta {
+    width: 70%;
+    margin: 0 auto;
+}
+
 #cta .cta-title {
-    font-size: 60px;
+    font-size: 65px;
     padding-block: 50px 30px;
 }
 
@@ -81,25 +88,101 @@ header .top-bar {
 #cta .cta-contents .cta-contents-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    flex-basis: 30%;
+    justify-content: space-between;
+    flex-basis: 25%;
+    padding-bottom: 10px;
+}
+
+#cta .cta-contents .cta-contents-text a {
+    color: black;
 }
 
 #cta .cta-contents .cta-contents-text .fa-arrow-down {
     font-size: 50px;
 }
 
-
-
 #cta .cta-contents .cta-contents-img {
-    flex-basis: 70%;
-    position: relative;
-    top: 20px;
-    /* width: 120%; */
-    /* transform: scale(1.0); */
+    flex-basis: 75%;
+    margin-bottom: -50px;
 }
 
-/* #cta .cta-contents .cta-contents-img img {
-    width: 130%;
-} */
+.business-plans {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-block: 100px;
+    /* border: 1px dashed red; */
+}
+
+.business-plans h2 {
+    font-size: 30px;
+}
+
+.business-plans .columns-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* border: 1px dashed blue; */
+}
+
+.business-plans .columns-container .col {
+    width: calc(100% / 3 - (40px / 3));
+    min-height: 600px;
+    border: 1px solid #dcdcde;
+}
+
+.business-plans .columns-container .col .plan-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.business-plans .plan-type {
+    text-align: center;
+    padding-block: 10px;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.business-plans .columns-container .col .plan-name-cost {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.business-plans .columns-container .col .plan-name-cost .duration {
+    color: #747878;
+}
+
+#or-buy-now {
+    display: inline-block;
+}
+
+.business-plans .columns-container .col hr {
+    width: 20%;
+    color: #dcdcde;
+}
+
+.business-plans .columns-container .col ul {
+    list-style-type: none;
+}
+
+.business-plans .team-col {
+    width: 100%;
+    border: 1px solid #dcdcde;
+}
+
+.business-plans .team-col .plan-details {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-inline: 20px
+}
+
+.business-plans .team-col .plan-details > div {
+    display: flex;
+    justify-content: space-between;
+}
 
