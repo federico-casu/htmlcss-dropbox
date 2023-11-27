@@ -49,7 +49,7 @@
                 <div class="cta-contents">
                     <div class="cta-contents-text">
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil corporis consectetur illum ab sequi delectus mollitia fuga, nulla, neque, aliquam reiciendis. Necessitatibus placeat nemo voluptatem expedita odit beatae explicabo ipsam!
+                            Finalmente tutti i tuoi struenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
                         </p>
                         <button class="blue-button">Inizia la tua prova gratuita</button>
                         <span>Annulla in qualsiasi momento</span>
@@ -70,11 +70,15 @@
          <section id="first-section" class="business-plans standard-dim">
 
             <h2 class="section-title">Trova il piano business che fa per te</h2>
-            <div class="invicing-type">
-                <input type="radio" id="monthly" name="invoicing" value="Fatturazione mensile">
-                <label for="monthly">Fatturazione mensile</label>
-                <input type="radio" id="annual" name="invoicing" value="Fatturazione annuale">
-                <label for="annual">Fatturazione annuale</label>
+            <div class="invoicing-type">
+                <div class="monthly">
+                    <input type="radio" id="monthly" name="invoicing" value="Fatturazione mensile">
+                    <label for="monthly">Fatturazione mensile</label>
+                </div>
+                <div class="annual">
+                    <input type="radio" id="annual" name="invoicing" value="Fatturazione annuale">
+                    <label for="annual">Fatturazione annuale</label>
+                </div>
             </div>
 
             <div class="columns-container">
@@ -93,16 +97,23 @@
                         </div>
     
                         <div class="plan-features">
-                            <ul>
+                            <ul class="fa-ul">
                                 <li>
-                                    <i class="fa-solid fa-user"></i>
-                                    1 utente</li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    1 utente
+                                </li>
                                 <li>
-                                    <i class="fa-solid fa-folder"></i>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-folder"></i>
+                                    </span>
                                     5 TB di spazio di archiviazione
                                 </li>
                                 <li>
-                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </span>
                                     Funzioni di produttività premium e condivisione file semplice e sicura
                                 </li>
                             </ul>
@@ -111,14 +122,14 @@
                         <div class="blue-button">Prova gratis per 30 giorni</div>
                         <span id="or-buy-now">oppure <a href="#">acquista ora</a></span>
                         <hr>
-                        <ul>
-                            <strong>Punti salienti del piano</strong>
+                        <ul class="fa-ul">
+                            <li><strong>Punti salienti del piano</strong></li>
                             <li>
-                                <i class="fa-solid fa-check"></i>
+                                <span class="fa-li"><i class="fa-solid fa-check"></i></span>
                                 Invia file fino a 100 GB con Dropbox Transfert
                             </li>
                             <li>
-                                <i class="fa-solid fa-check"></i>
+                                <span class="fa-li"><i class="fa-solid fa-check"></i></span>
                                 Cartelle offline su dispositivi mobili
                             </li>
                         </ul>
@@ -129,29 +140,36 @@
                 <div class="col">
 
                     <div class="plan-type">
-                        <i class="fa-solid fa-user"></i>
-                        <span>Singolo</span>
+                        <i class="fa-solid fa-users"></i>
+                        <span>Team</span>
                     </div>
 
                     <div class="plan-details">
                         <div class="plan-name-cost">
-                            <h3>Professional</h3>
-                            <span class="plan-cost">€ 12.00</span>
-                            <span class="duration">/mese</span>
+                            <h3>Advanced</h3>
+                            <span class="plan-cost">€ 18.00</span>
+                            <span class="duration">/utente/mese</span>
                         </div>
     
                         <div class="plan-features">
-                            <ul>
+                            <ul class="fa-ul">
                                 <li>
-                                    <i class="fa-solid fa-user"></i>
-                                    1 utente</li>
-                                <li>
-                                    <i class="fa-solid fa-folder"></i>
-                                    5 TB di spazio di archiviazione
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-users"></i>
+                                    </span>
+                                    3 o più utenti
                                 </li>
                                 <li>
-                                    <i class="fa-solid fa-share-nodes"></i>
-                                    Funzioni di produttività premium e condivisione file semplice e sicura
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-folder"></i>
+                                    </span>
+                                    Tutto lo spazio di cui ha bisogno il tuo team
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </span>
+                                    Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team
                                 </li>
                             </ul>
                         </div>
@@ -159,67 +177,91 @@
                         <div class="blue-button">Prova gratis per 30 giorni</div>
                         <span id="or-buy-now">oppure <a href="#">acquista ora</a></span>
                         <hr>
-                        <ul>
-                            <strong>Punti salienti del piano</strong>
+                        <ul class="fa-ul">
+                            <li><strong>Punti salienti del piano</strong></li>
                             <li>
-                                <i class="fa-solid fa-check"></i>
-                                Invia file fino a 100 GB con Dropbox Transfert
+                                <span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                Nessun limite di spazio per i file
                             </li>
                             <li>
-                                <i class="fa-solid fa-check"></i>
+                                <span class="fa-li"><i class="fa-solid fa-check"></i></span>
                                 Cartelle offline su dispositivi mobili
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                Risparmio del 50% rispetto alle iscrizioni singole
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                Possibilità di inserire nuovi membri del team
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                Gestione dei permessi in base ai ruoli
                             </li>
                         </ul>
                     </div>
 
+                </div>
+
+                <div class="col">
+
+                    <div class="plan-type">
+                        <i class="fa-solid fa-building"></i>
+                        <span>Azienda</span>
+                    </div>
+
+                    <div class="plan-details">
+                        <div class="plan-name-cost">
+                            <h3>Enterprise</h3>
+                            <span class="plan-cost">Contattaci</span>
+                            <span class="duration">-</span>
+                        </div>
+    
+                        <div class="plan-features">
+                            <ul class="fa-ul">
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    10 o più utenti
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-folder"></i>
+                                    </span>
+                                    Soluzioni personalizzabili per la tua azienda
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </span>
+                                    Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="blue-button">Contattaci</div>
+                        <span id="or-buy-now">oppure <a href="#">acquista ora</a></span>
+                        <hr>
+                        <ul class="fa-ul">
+                            <li><strong>Punti salienti del piano</strong></li>
+                            <li>
+                                <span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                Cartelle offline su dispositivi mobili
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                Servizio assistenza 24/h
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fa-solid fa-check"></i></span>
+                                Possibilità di personalizzazione totale
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 
-                <div class="col">
-
-                    <div class="plan-type">
-                        <i class="fa-solid fa-user"></i>
-                        <span>Singolo</span>
-                    </div>
-
-                    <div class="plan-details">
-                        <div class="plan-name-cost">
-                            <h3>Professional</h3>
-                            <span class="plan-cost">€ 12.00</span>
-                            <span class="duration">/mese</span>
-                        </div>
-    
-                        <div class="plan-features">
-                            <ul>
-                                <li>
-                                    <i class="fa-solid fa-user"></i>
-                                    1 utente</li>
-                                <li>
-                                    <i class="fa-solid fa-folder"></i>
-                                    5 TB di spazio di archiviazione
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-share-nodes"></i>
-                                    Funzioni di produttività premium e condivisione file semplice e sicura
-                                </li>
-                            </ul>
-                        </div>
-    
-                        <div class="blue-button">Prova gratis per 30 giorni</div>
-                        <span id="or-buy-now">oppure <a href="#">acquista ora</a></span>
-                        <hr>
-                        <ul>
-                            <strong>Punti salienti del piano</strong>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Invia file fino a 100 GB con Dropbox Transfert
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Cartelle offline su dispositivi mobili
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
 
             <div class="team-col">
@@ -238,7 +280,7 @@
                         </div>
                         <button class="blue-button">Contatta l'ufficio vendite</button>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate modi consequuntur laboriosam obcaecati. Reprehenderit tempora iste quasi sint. Rem doloribus aperiam eos inventore quidem, minima eaque quod. Ipsa, nam officiis?</p>
+                    <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</p>
 
                 </div>
 
@@ -253,7 +295,7 @@
             </figure>
             <div class="find-partner-text">
                 <h3>Entra in contatto con un partner Dropbox</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor recusandae eligendi, praesentium alias eaque iure minima! Doloremque cupiditate provident dicta alias inventore similique unde beatae, eligendi saepe autem magni quaerat!</p>
+                <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obbiettivi aziendali, tra cui implementazione , integrazione, gestione e supporto continui.</p>
                 <button class="white-button">Trova un partner</button>
             </div>
          </section>
@@ -267,42 +309,42 @@
                         <img src="./assets/img/business-feature-switching-tools.png" alt="">
                     </figure>
                     <h3>Passa di meno da uno strumento all'altro</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum placeat, neque, architecto necessitatibus qui quas deserunt corporis ducimus repellat blanditiis enim a, numquam asperiores? Enim quas molestias et voluptate.</p>
+                    <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                 </div>
                 <div class="col">
                     <figure>
                         <img src="./assets/img/business-feature-send-files-it.png" alt="">
                     </figure>
                     <h3>Passa di meno da uno strumento all'altro</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum placeat, neque, architecto necessitatibus qui quas deserunt corporis ducimus repellat blanditiis enim a, numquam asperiores? Enim quas molestias et voluptate.</p>
+                    <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                 </div>
                 <div class="col">
                     <figure>
                         <img src="./assets/img/business-feature-coordinate-it.png" alt="">
                     </figure>
                     <h3>Passa di meno da uno strumento all'altro</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum placeat, neque, architecto necessitatibus qui quas deserunt corporis ducimus repellat blanditiis enim a, numquam asperiores? Enim quas molestias et voluptate.</p>
+                    <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                 </div>
                 <div class="col">
                     <figure>
                         <img src="./assets/img/business-feature-integrations-it.png" alt="">
                     </figure>
                     <h3>Passa di meno da uno strumento all'altro</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum placeat, neque, architecto necessitatibus qui quas deserunt corporis ducimus repellat blanditiis enim a, numquam asperiores? Enim quas molestias et voluptate.</p>
+                    <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                 </div>
                 <div class="col">
                     <figure>
                         <img src="./assets/img/business-feature-multi-device.png" alt="">
                     </figure>
                     <h3>Passa di meno da uno strumento all'altro</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum placeat, neque, architecto necessitatibus qui quas deserunt corporis ducimus repellat blanditiis enim a, numquam asperiores? Enim quas molestias et voluptate.</p>
+                    <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                 </div>
                 <div class="col">
                     <figure>
                         <img src="./assets/img/business-feature-security.png" alt="">
                     </figure>
                     <h3>Passa di meno da uno strumento all'altro</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum placeat, neque, architecto necessitatibus qui quas deserunt corporis ducimus repellat blanditiis enim a, numquam asperiores? Enim quas molestias et voluptate.</p>
+                    <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                 </div>
             </div>
          </section>
