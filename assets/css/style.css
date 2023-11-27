@@ -16,6 +16,10 @@ img {
     display: block;
 }
 
+p {
+    line-height: 140%;
+}
+
  /* // ANCHOR begin UTILITY CLASSES */
 
 .blue-button {
@@ -23,9 +27,13 @@ img {
     padding: 5px 10px;
     border-radius: 0;
     color: white;
-    background-color: #0161ff;
+    background-color: rgba(1, 97, 255, 1);
     cursor: pointer;
     text-align: center;
+}
+
+.blue-button:hover {
+    background-color: rgba(1, 97, 255, 0.8);
 }
 
 .standard-dim {
@@ -65,15 +73,31 @@ header .top-bar {
     top: 0;
     left: 0;
     right: 0;
-    border: 2px dashed red;
+    z-index: 1;
+    /* border: 2px dashed red; */
 }
 
 .top-bar ul {
+    height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
     gap: 20px;
+}
+
+.top-bar ul li {
+    height: 10vh;
+    line-height: 10vh;
+}
+
+.top-bar ul li:hover:not(.top-bar .top-bar-left li:first-child) {
+    border-bottom: 2px solid black;
+}
+
+.top-bar .top-bar-left li:first-child {
+    display: flex;
+    align-items: center;
 }
 
 .top-bar ul li a {
@@ -93,19 +117,22 @@ header .top-bar {
 
 #cta .cta-title {
     font-size: 65px;
-    padding-block: 50px 30px;
+    /* padding-block: 50px 30px; */
+    padding-top: 50px;
 }
 
 #cta .cta-contents {
     display: flex;
+    position: relative;
+    bottom: -50px;
 }
 
 #cta .cta-contents .cta-contents-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
     flex-basis: 25%;
-    padding-bottom: 10px;
 }
 
 #cta .cta-contents .cta-contents-text a {
@@ -113,12 +140,11 @@ header .top-bar {
 }
 
 #cta .cta-contents .cta-contents-text .fa-arrow-down {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #cta .cta-contents .cta-contents-img {
     flex-basis: 75%;
-    margin-bottom: -50px;
 }
 
  /* // ANCHOR begin section 1 business plans style */
@@ -269,17 +295,17 @@ header .top-bar {
 }
 
 .companies .macro-square-container {
-    flex-basis: calc(100% / 3);
-    height: 480px;
-    border: 2px dashed red;
+    flex-basis: calc(100vw / 3);
+    height: calc(100vw / 3);
+    /* border: 2px dashed red; */
     display: flex;
     flex-wrap: wrap;
 }
 
 .companies .macro-square-container .square-company {
-    width: calc(100% / 2);
-    height: calc(100% / 2);
-    border: 1px dashed black;
+    width: 50%;
+    height: 50%;
+    /* border: 1px dashed black; */
     display: flex;
     justify-content: center;
     align-items: center;
