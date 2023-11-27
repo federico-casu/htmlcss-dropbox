@@ -401,3 +401,59 @@ header .top-bar {
     margin-top: 20px;
     display: block;
 }
+
+/* // ANCHOR begin footer style */
+
+footer {
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .footer-content {
+    width: 70%;
+    margin: 0 auto;
+    padding-block: 80px 50px;
+}
+
+footer .footer-content .footer-columns-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-content .footer-col ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .footer-content .footer-col ul strong {
+    margin-bottom: 20px;
+    font-size: 18px;
+
+}
+
+footer .footer-content .footer-col ul li {
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+footer .footer-content hr {
+    color: #999999;
+    width: 10%;
+    margin-block: 100px 30px;
+}
+
+footer .footer-content .language {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #999999;
+}
